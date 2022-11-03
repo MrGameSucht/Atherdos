@@ -1,0 +1,118 @@
+body{
+    background-color: #333;
+}
+
+.mein-name {
+    font-size: 100%;
+    color: rgb(0, 238, 255);
+    background-color: rgb(85, 19, 129);
+    font-size: 50px;
+    text-align: center;
+}
+
+.liste {
+    font-size: 25px;
+    border-radius: 25px;
+    color: rgb(174, 0, 255);
+    background-color: rgb(73, 73, 73);
+    width: 30%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    animation-duration: 0.5s;
+    animation-name: cooleAnimation;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes cooleAnimation {
+    from {
+        transform: translateX(-2px);
+    }
+  
+    to {
+        transform: translateX(2px);
+    }
+  }
+
+ul {
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.mein-menu {
+    background-color: rgb(8, 8, 8);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.mein-menu a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+.mein-menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.mein-menu a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+.platz {
+    border-radius: 25px;
+    height: 300px;
+    width: 100hmax;
+    background-color: rgb(122, 122, 122);
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.ausgefahren {
+    display: none;
+}
+
+.platz:hover + .ausgefahren{
+    display: block;
+}
+
+.bild{
+    padding-right: 10px;
+    padding-top: 10px;
+    float: right;
+    width :280px;
+    height:280px;
+}
+ 
+img{
+    border-radius: 50%;
+    float: right;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.text {
+    font-size: 150px;
+    float: left;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.ausgefahren {
+    width: 60%;
+    background-color: aqua;
+    margin-left: auto;
+    margin-right: auto;
+}
